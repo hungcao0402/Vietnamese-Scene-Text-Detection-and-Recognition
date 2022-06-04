@@ -1,7 +1,7 @@
 
 # BKAI-NAVER 2022 - Track 3: OCR - Team: UIT.TurtleDog
 
-Lưu ý: trong quá trình chạy, hầu hết chúng tôi đều sử dụng bash scripts để tiện lợi cho ban tổ chức (BTC) trong quá trình chạy. Chúng tôi có comment mục đích các lệnh mà chúng tôi chạy trong các file bash scripts này để BTC hiểu rõ hơn.
+Lưu ý: Trong quá trình chạy, hầu hết chúng tôi đều sử dụng bash scripts để tiện lợi trong quá trình chạy. Chúng tôi có comment mục đích các lệnh mà chúng tôi chạy trong các file bash scripts này để BTC hiểu rõ hơn.
 
 ## 1. Setup môi trường:
 
@@ -76,7 +76,7 @@ Một vài lưu ý trước khi train:
 
 - Số lượng ảnh ở mỗi batch (tức batch size) cần phải chia hết cho số lượng GPUs dùng để train. Để thiết lập thông số này, vào file `ABCnetV2/configs/BAText/VinText/v2_attn_R_50.yaml` và điều chỉnh biến `IMS_PER_BATCH`.
 
-- Với kết quả hiện tại tốt nhất của team đạt được, chúng tôi train với config như sau, BTC có thể tham khảo:
+- Với kết quả hiện tại tốt nhất của team đạt được, chúng tôi train với config như sau:
 
     + Tổng thời gian train: 15.57hrs
 
@@ -113,9 +113,7 @@ bash predict.sh
 
 Kết quả cuối cùng sẽ là file `iternet/sub.zip`.
 
-## Liên hệ
 
-Nếu trong quá trình reproduce lại, BTC có gặp bất kỳ vấn đề gì, vui lòng liên lạc với chúng tôi qua [mail](mailto:20520198@gm.uit.edu.vn) này. Lời cuối cùng, xin cảm ơn BTC đã tổ chức kỳ thi rất thú vị và bổ ích này.
 
 
 
