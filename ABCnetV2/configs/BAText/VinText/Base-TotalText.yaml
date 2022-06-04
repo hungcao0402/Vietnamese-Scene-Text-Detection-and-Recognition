@@ -1,0 +1,3 @@
+_BASE_: "../Base-BAText.yaml"
+DATASETS:
+  TRAIN: ("custom_train",)

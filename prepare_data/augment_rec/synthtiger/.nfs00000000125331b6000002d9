@@ -1,0 +1,5 @@
+gdown --id 11D_C3P18XKHgfw2GTmV4EJtEYQMACRh-  &&
+unzip resources.zip  &&
+synthtiger -o ../../../data/rec_train_data/syndata -w 16 -c 100000 -v examples/synthtiger/template.py SynthTiger examples/synthtiger/config_horizontal.yaml  &&
+synthtiger -o ../../../data/rec_train_data/evaldata -w 16 -c 10000 -v examples/synthtiger/template.py SynthTiger examples/synthtiger/config1.yaml &&
+synthtiger -o ../../../data/rec_train_data/synaugment -w 16 -c 50000 -v examples/synthtiger/template.py SynthTiger examples/synthtiger/config2.yaml

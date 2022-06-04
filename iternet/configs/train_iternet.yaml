@@ -1,0 +1,65 @@
+global:
+  name: train-iternet
+  phase: train
+  stage: train-super
+  workdir: workdir
+  seed: ~
+
+dataset:
+  train: {
+    roots: ['../data/rec_train_data/lmdb/ori',  "../data/rec_train_data/lmdb/syndata", "../data/rec_train_data/lmdb/synaugment"],
+    batch_size: 128
+  }
+  test: {
+    roots: ['../data/rec_train_data/lmdb/evaldata'],
+    batch_size: 128
+  }
+  data_aug: True
+  multiscales: False
+  num_workers: 4
+  pin_memory: True
+training:
+  epochs: 30
+  show_iters: 50
+  eval_iters: 1500
+  save_iters: 1500
+
+optimizer:
+  type: Adam
+  true_wd: False
+  wd: 0.0
+  bn_wd: False
+  clip_grad: 20
+  lr: 0.0001
+  args: {
+    betas: !!python/tuple [0.9, 0.999], # for default Adam 
+  }
+  scheduler: {
+    periods: [20, 10],
+    gamma: 0.1,
+  }
+
+model:
+  name: 'modules.model_iternet.IterNet'
+  iter_size: 3
+  ensemble: ''
+  use_vision: False
+  vision: {
+    checkpoint: "./workdir/pretrain-vm/best-pretrain-vm.pth",
+    loss_weight: 1.,
+    attention: 'position',
+    backbone: 'transformer',
+    backbone_ln: 3,
+    iter_size: 3,
+    backbone_alpha_d: 0.5,
+  }
+  language: {
+    checkpoint:  "./workdir/pretrain-language-model/best-pretrain-language-model.pth",
+    num_layers: 4,
+    loss_weight: 1.,
+    detach: True,
+    use_self_attn: False
+  }
+  alignment: {
+    loss_weight: 1.,
+  }

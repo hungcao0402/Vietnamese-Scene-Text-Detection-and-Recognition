@@ -1,0 +1,14 @@
+# det
+straug
+
+# iternet
+synthtiger
+torch
+torchvision
+fastai==1.0.60
+LMDB
+Pillow
+opencv-python
+tensorboardX
+editdistance
+synthtiger
