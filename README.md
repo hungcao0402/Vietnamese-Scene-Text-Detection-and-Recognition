@@ -42,7 +42,7 @@ Trong quá trình tạo dữ liệu cho training, chúng tôi có các resources
 
 Tất cả các files trên được chúng tôi để ở trên thư mục Drive [này](https://drive.google.com/drive/folders/1Dt4jd79_WODHtD7mkWF0TnHNs-0BXKVs?usp=sharing).
 
-Chúng tôi cũng cung cấp code để download và unzip các data trên và data từ ban tổ chức vào đúng vị trí. BTC có thể chạy:
+Chúng tôi cũng cung cấp code để download và unzip các data trên và data từ ban tổ chức vào đúng vị trí. Mọi người có thể chạy:
 
 ```
 bash scripts/download.sh
