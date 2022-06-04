@@ -74,7 +74,7 @@ cd ABCnetV2
 python3 setup.py build develop
 ```
 
-Trước khi train, xem file `train.sh` để điều chỉnh các tham số về cấu hình train như `num-gpus`, `num-machine`,... cho phù hợp với cấu hình của BTC.
+Trước khi train, xem file `train.sh` để điều chỉnh các tham số về cấu hình train như `num-gpus`, `num-machine`,... cho phù hợp với cấu hình.
 
 Một vài lưu ý trước khi train:
 
