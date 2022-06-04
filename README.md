@@ -2,6 +2,7 @@
 # BKAI-NAVER 2022 - Track 3: OCR - Team: UIT.TurtleDog
 
 Lưu ý: 
+
         - Trong quá trình chạy, hầu hết chúng tôi đều sử dụng bash scripts để tiện lợi trong quá trình chạy. Chúng tôi có comment mục đích các lệnh mà chúng tôi chạy trong các file bash scripts này để BTC hiểu rõ hơn.
 
         - Code này là version1 chỉ sử dụng 1 detector là ABCNetV2 ở vòng public test, version2 có thêm Yolov5 sẽ được update sau.
