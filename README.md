@@ -11,7 +11,7 @@ Lưu ý:
 
 Để thuận tiện và tránh xung đột trong việc cài đặt, chúng tôi sử dụng Docker chạy Linux dùng làm công cụ để cài đặt.
 
-Nhằm cài đặt Docker thích hợp cho môi trường máy host, BTC có thể theo các hướng dẫn tại trang chủ của Docker.
+Nhằm cài đặt Docker thích hợp cho môi trường máy host, mọi người có thể theo các hướng dẫn tại trang chủ của Docker.
 
 Sau khi unzip toàn bộ source code của chúng tôi, hãy tiến hành build Docker image.
 
